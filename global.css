@@ -1,8 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,800&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Font1'; /* Replace with your desired font name */
+  src: url('public/fonts/WestchesterV2-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'olive'; 
+  src: url('public/fonts/olivevillage-italic.ttf') format('truetype');
+}
+
+.mont {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.custom {
+  font-family: 'Font2'; 
+}
+
+
 
 @layer base {
   .text-edge-outline {
@@ -10,6 +33,15 @@
   }
 } 
 
+@media only screen and (max-width: 500px){
+.page-height{
+  min-height: 200vh;
+}
+
+.icon{
+  margin-left: 20%;
+}
+}
 
 .tiltneon {
   font-family: "Tilt neon";

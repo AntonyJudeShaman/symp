@@ -17,7 +17,7 @@ export default function Home() {
 	
       <div
         style={{ maxWidth: "100%", minHeight: "100vh" }}
-        className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-indigo-950 via-green-600/20 to-indigo-950"
+        className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-indigo-950 via-green-600/10 to-teal-950"
       >
         <nav className="my-16 animate-fade-in">
           <ul className="flex items-center z-40 justify-center gap-4">
@@ -29,7 +29,7 @@ export default function Home() {
           className="absolute inset-0 -z-10 animate-fade-in"
           quantity={100}
         />
-        <h1 className="z-10 text-4xl text-gradient text-transparent duration-1000 bg-zinc-50 cursor-default text-edge-outline animate-title font-display sm:text-8xl md:text-9xl whitespace-nowrap bg-clip-text ">
+        <h1 className="z-10 text-4xl  text-gradient text-transparent duration-1000 bg-zinc-50 cursor-default text-edge-outline animate-title font-display sm:text-8xl md:text-9xl whitespace-nowrap bg-clip-text ">
           TechFest 2k23
         </h1>
 

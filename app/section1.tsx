@@ -12,11 +12,11 @@ export default function Home2() {
   return (
     <div
       style={{ maxWidth: "100%", minHeight: "100vh" }}
-      className="flex flex-col items-center  overflow-hidden bg-gradient-to-tr  from-emerald-100 to-zinc-50"
+      className="flex flex-col items-center overflow-hidden bg-gradient-to-tr  from-emerald-100 to-zinc-50"
     >
       <nav className="my-16 animate-fade-in">
-        <ul className="flex items-center text-5xl z-40 justify-center ">
-          <p className="header-gradient">About Us</p>
+        <ul className="flex items-center text-6xl z-40 justify-center ">
+          <p className="header-gradient tiltneon">About Us</p>
         </ul>
       </nav>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/3 via-zinc-300/50 to-zinc-300/0" />
@@ -24,7 +24,7 @@ export default function Home2() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
-      <p className="p-margin text-justify text-zinc-950 animate-fade-in">
+      <p className="p-margin text-justify text-lg text-zinc-950 tiltneon animate-fade-in">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         esse distinctio saepe corporis velit accusantium, voluptatibus atque
         excepturi at reiciendis cupiditate omnis! Similique nesciunt tempore,
@@ -39,7 +39,7 @@ export default function Home2() {
         Accusantium.
       </p>
 
-      <p className="p-margin mt-10 text-justify animate-fade-in">
+      <p className="p-margin mt-10 text-lg text-justify tiltneon animate-fade-in">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         esse distinctio saepe corporis velit accusantium, voluptatibus atque
         excepturi at reiciendis cupiditate omnis! Similique nesciunt tempore,
