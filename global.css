@@ -17,7 +17,7 @@
 }
 
 .dept-bg{
-  background-image: linear-gradient(to top right,#007991, #78FFD6) !important;
+  background-image: linear-gradient(to top right,#00d5ff, #fbfffe) !important;
 }
 
 .hover\:animate-bounce:hover {
@@ -292,7 +292,7 @@
   position: relative;
   width: 220px;
   height: 320px;
-  background: linear-gradient( #0512a2, #450202);
+  background: linear-gradient( #000000, #ffffff);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,7 +314,7 @@
   justify-content: center;
   font-size: 2vh;
   font-weight: bold;
-  background: linear-gradient( #e206ab, #0bfa93);
+  background: linear-gradient( #3b002d, #011e11);
   transition: all 0.5s;
   color:aliceblue;
 }
@@ -340,11 +340,13 @@
   color:black;
 }
 
+
 .card0:hover:after {
   content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,esse distinctio saepe corporis velit accusantium, voluptatibus atqueexcepturi at reiciendis";
   color:aliceblue;
   font-weight: 100;
   padding:4%;
+  /* background-image: url("./xplore logo_final3.png"); */
 }
 
 .card1:hover:after {

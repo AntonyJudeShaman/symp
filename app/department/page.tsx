@@ -3,7 +3,15 @@ import Link from "next/link";
 import React from "react";
 import { ArrowLeft } from "lucide-react";
 import Navbar from "./nav";
+import Image from "next/image";
 import IconsPage from "./deptsec1";
+import ece from "./assets/ece.png";
+import mech from "./assets/mech.jpg";
+import eee from "./assets/eee.png";
+import it from "./assets/it.png";
+import cse from "./assets/cse.png";
+import Particles from "../components/particles";
+import licet from "./licet-logo-60b9776a.png";
 
 const navigation = [
   { name: "Events", href: "/events" },
@@ -11,13 +19,15 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
-const links = [
-  { href: "/", label: "Home" },
-  // { href: "/projects", label: "Projects" },
-  // { href: "/contact", label: "Contact" },
-];
+const links = [{ href: "/", label: "Home" }];
 
 export default function Departments() {
+  const cardStyle = {
+    backgroundImage: `url(${licet})`,
+    backgroundSize: "cover",
+    zIndex: 10,
+  };
+
   return (
     <>
       <Navbar links={links} />
@@ -31,26 +41,49 @@ export default function Departments() {
             className="duration-200 text-zinc-950 hover:text-indigo-900 arrow-left"
           >
             <div className="flex items-center ml-10 w-30">
-              <div className="hover:animate-bounce  hover:border-zinc-500">
+              <div className="hover:animate-bounce   hover:border-zinc-500">
                 <ArrowLeft className="w-10 h-10 inline-block  hover:border-zinc-500" />
               </div>
-              <span style={{ fontSize: "3.5vh" }} className=" hover:border-zinc-500">Go Back</span>
+              <span
+                style={{ fontSize: "3.5vh" }}
+                className=" hover:border-zinc-500"
+              >
+                Go Back
+              </span>
             </div>
           </Link>
           <div className="flex flex-wrap flex-row justify-center w-200">
-            <div className="card card0 m-5 border-2 border-indigo-950  ">
-              CSE
+            <div className="card card0 m-5 border-2 flex-col border-indigo-950 ">
+              
+            <p className="card-title mx-auto d-block "></p>
+              <div>
+                <Image src={cse} alt="Logo" className=" z-50 h-50 " />
+              </div>
             </div>
-            <div className="card card1 m-5 border-2 border-indigo-950  ">
-              IT
+            <div className="card card1 m-5 border-2 flex-col border-indigo-950  ">
+            <p className="card-title mx-auto d-block "></p>
+              <div>
+                <Image src={it} alt="Logo" className=" z-50 h-50 " />
+              </div>
             </div>
-            <div className="card card2 m-5 border-2 border-indigo-950 ">
-              ECE
+            <div className="card card1 m-5 border-2 flex-col border-indigo-950  ">
+            <p className="card-title mx-auto d-block "></p>
+              <div>
+                <Image src={ece} alt="Logo" className=" z-50 h-50 " />
+              </div>
             </div>
-            <div className="card card3 m-5 border-2 border-indigo-950  ">
-              MECH
+            <div className="card card1 m-5 border-2 flex-col border-indigo-950  ">
+            <p className="card-title mx-auto d-block "></p>
+              <div>
+                <Image src={mech} alt="Logo" className=" z-50 h-50 " />
+              </div>
             </div>
-            <div className="card card4 m-5 border-2 border-indigo-950">EEE</div>
+            <div className="card card1 m-5 border-2 flex-col border-indigo-950  ">
+            <p className="card-title mx-auto d-block "></p>
+              <div>
+                <Image src={eee} alt="Logo" className=" z-50 h-50 " />
+              </div>
+            </div>
           </div>
         </div>
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/3 via-zinc-300/50 to-zinc-300/0" />
