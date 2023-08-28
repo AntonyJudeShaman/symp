@@ -69,7 +69,7 @@ export default function Departments() {
             <div className="card card1 m-5 border-2 flex-col border-indigo-950  ">
             <p className="card-title mx-auto d-block "></p>
               <div>
-                <Image src={mech} alt="Logo" className=" z-50 h-50 " />
+                <p>MECH</p>
               </div>
             </div>
             <div className="card card1 m-5 border-2 flex-col border-indigo-950  ">
