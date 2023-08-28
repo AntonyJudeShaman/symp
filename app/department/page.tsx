@@ -6,7 +6,6 @@ import Navbar from "./nav";
 import Image from "next/image";
 import IconsPage from "./deptsec1";
 import ece from "./assets/ece.png";
-import mech from "./assets/mech.jpg";
 import eee from "./assets/eee.png";
 import it from "./assets/it.png";
 import cse from "./assets/cse.png";
