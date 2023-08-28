@@ -47,8 +47,7 @@ const IconsPage: React.FC = () => {
       <p className="text-lg lg:p-20 lg:-mt-10 p-10 text-justify mb-10">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quasi
         quaerat, praesentium earum minus eius aperiam adipisci sequi nesciunt!
-        Distinctio aperiam, nisi accusamus fugiat eligendi, porro consectetur
-        itaque repellat tempora temporibus vero adipisci ea eos possimus minima
+        Distinctio aperiam,  temporibus vero adipisci ea eos possimus minima
         explicabo maiores illum, tenetur rerum neque laborum. Ab laborum odit
         sed id veritatis dolores, unde illo libero minima hic rerum culpa itaque
         quisquam cum laboriosam, incidunt voluptate ut consectetur natus, eaque
