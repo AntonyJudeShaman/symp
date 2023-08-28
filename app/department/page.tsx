@@ -42,14 +42,9 @@ export default function Departments() {
           >
             <div className="flex items-center ml-10 w-30">
               <div className="hover:animate-bounce   hover:border-zinc-500">
-                <ArrowLeft className="w-10 h-10 inline-block  hover:border-zinc-500" />
+                <ArrowLeft className="w-12 h-12 inline-block  hover:border-zinc-500" />
               </div>
-              <span
-                style={{ fontSize: "3.5vh" }}
-                className=" hover:border-zinc-500"
-              >
-                Go Back
-              </span>
+             
             </div>
           </Link>
           <div className="flex flex-wrap flex-row justify-center w-200">
