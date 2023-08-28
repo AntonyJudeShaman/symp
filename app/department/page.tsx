@@ -43,37 +43,38 @@ export default function Departments() {
               <div className="hover:animate-bounce   hover:border-zinc-500">
                 <ArrowLeft className="w-12 h-12 inline-block  hover:border-zinc-500" />
               </div>
-             
             </div>
           </Link>
           <div className="flex flex-wrap flex-row justify-center w-200">
             <div className="card card0 m-5 border-2 flex-col border-indigo-950 ">
-              
-            <p className="card-title mx-auto d-block "></p>
+              <p className="card-title mx-auto d-block "></p>
               <div>
                 <Image src={cse} alt="Logo" className=" z-50 h-50 " />
               </div>
             </div>
-            <div className="card card1 m-5 border-2 flex-col border-indigo-950  ">
-            <p className="card-title mx-auto d-block "></p>
-              <div>
-                <Image src={it} alt="Logo" className=" z-50 h-50 " />
+            <Link href="https://flair2k23.vercel.app/">
+              <div className="card card1 m-5 border-2 flex-col border-indigo-950  ">
+                <p className="card-title mx-auto d-block "></p>
+                <div>
+                  <Image src={it} alt="Logo" className=" z-50 h-50 " />
+                </div>
               </div>
-            </div>
+            </Link>
+
             <div className="card card1 m-5 border-2 flex-col border-indigo-950  ">
-            <p className="card-title mx-auto d-block "></p>
+              <p className="card-title mx-auto d-block "></p>
               <div>
                 <Image src={ece} alt="Logo" className=" z-50 h-50 " />
               </div>
             </div>
             <div className="card card1 m-5 border-2 flex-col border-indigo-950  ">
-            <p className="card-title mx-auto d-block "></p>
+              <p className="card-title mx-auto d-block "></p>
               <div>
                 <p>MECH</p>
               </div>
             </div>
             <div className="card card1 m-5 border-2 flex-col border-indigo-950  ">
-            <p className="card-title mx-auto d-block "></p>
+              <p className="card-title mx-auto d-block "></p>
               <div>
                 <Image src={eee} alt="Logo" className=" z-50 h-50 " />
               </div>
