@@ -5,9 +5,10 @@ import Navbar from "./nav";
 import Image from "next/image";
 import IconsPage from "./deptsec1";
 import ece from "./assets/ece.png";
-import eee from "./assets/eee.png";
+import eee from "./assets/eeebg.png";
 import it from "./assets/it.png";
 import cse from "./assets/cse.png";
+import mech from "./assets/mechbg.png";
 import Particles from "../components/particles";
 import licet from "./licet-logo-60b9776a.png";
 
@@ -38,13 +39,13 @@ const socials = [
     href: "mailto:.com",
     label: "EEE",
     desc: "licet",
-    image: it,
+    image: eee,
   },
   {
     href: "mailto:.com",
     label: "MECH",
     desc: "licet",
-    image: ece,
+    image: mech,
   },
 ];
 
