@@ -51,13 +51,13 @@ export const Navigation: React.FC = () => {
           <div className="flex text-teal-50 gap-5">
             <Link
               href="/department"
-              className="duration-200 tiltneon text-xl text-teal-400 hover:text-teal-100"
+              className="duration-500  font-display text-xl text-orange-400 hover:text-orange-600"
             >
               Departments
             </Link>
             <Link
               href="/contact"
-              className="duration-200 tiltneon text-xl text-teal-400 hover:text-teal-100"
+              className="duration-500  font-display  text-xl text-orange-400 hover:text-orange-600"
             >
               Contact
             </Link>

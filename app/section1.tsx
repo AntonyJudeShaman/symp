@@ -10,21 +10,23 @@ const navigation = [
 
 export default function Home2() {
   return (
-    <div
+    <> 
+    <Particles
+        className="absolute inset-0 z-40 animate-fade-in"
+        quantity={100}
+      />   
+      <div
       style={{ maxWidth: "100%", minHeight: "100vh" }}
-      className="flex flex-col items-center overflow-hidden bg-gradient-to-tr  from-emerald-100 to-zinc-50"
+      className="flex flex-col z-20 items-center overflow-hidden bg-gradient-to-tr from-zinc-950/20 via-teal-950 to-zinc-950/100"
     >
-      <nav className="my-16 animate-fade-in">
-        <ul className="flex items-center text-6xl z-40 justify-center ">
-          <p className="header-gradient tiltneon">About Us</p>
+      <nav className="my-16 s animate-fade-in">
+        <ul className="flex items-center text-6xl  justify-center ">
+          <p className=" text-orange-600 pl-8 font-display">About TechFest </p>
         </ul>
       </nav>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/3 via-zinc-300/50 to-zinc-300/0" />
-      <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={100}
-      />
-      <p className="p-margin text-justify text-lg text-zinc-950 tiltneon animate-fade-in">
+      
+      <p className="p-margin text-justify font-display text-lg text-zinc-50 t animate-fade-in">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         esse distinctio saepe corporis velit accusantium, voluptatibus atque
         excepturi at reiciendis cupiditate omnis! Similique nesciunt tempore,
@@ -39,7 +41,7 @@ export default function Home2() {
         Accusantium.
       </p>
 
-      <p className="p-margin mt-10 text-lg text-justify tiltneon animate-fade-in">
+      <p className="p-margin mt-10 text-lg text-justify font-display text-zinc-50 animate-fade-in">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         esse distinctio saepe corporis velit accusantium, voluptatibus atque
         excepturi at reiciendis cupiditate omnis! Similique nesciunt tempore,
@@ -67,5 +69,7 @@ export default function Home2() {
 					))}
       </div>
     </div>
+    </>
+
   );
 }

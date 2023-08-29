@@ -11,6 +11,32 @@
   src: url('public/fonts/WestchesterV2-Regular.otf') format('opentype');
 }
 
+svg:hover{
+  color:#00d5ff;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  background: -webkit-linear-gradient( #dfdcdc, #fa0b0b);
+  -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-number {
+  font-weight: bold;
+  color: #ffffff;
+}
+
 @font-face {
   font-family: 'olive'; 
   src: url('public/fonts/olivevillage-italic.ttf') format('truetype');
@@ -61,55 +87,55 @@
   font-weight: 400;
 }
 
-.card-button {
-  --glow-color: rgb(100, 201, 216);
-  --glow-spread-color: rgba(54, 2, 102, 0.781);
-  --enhanced-glow-color: rgb(58, 9, 104);
-  --btn-color: rgb(100, 61, 136);
-  border: .25em solid var(--glow-color);
-  padding: 1em 3em;
-  color: var(--glow-color);
-  font-size: 15px;
-  font-weight: bold;
-  background-color: var(--btn-color);
-  border-radius: 1em;
-  outline: none;
-  box-shadow: 0 0 1em .25em var(--glow-color),
-         0 0 4em 1em var(--glow-spread-color),
-         inset 0 0 .75em .25em var(--glow-color);
-  text-shadow: 0 0 .5em var(--glow-color);
-  position: relative;
-  transition: all 0.3s;
- }
- 
- .card-button::after {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  top: 120%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--glow-spread-color);
-  filter: blur(2em);
-  opacity: .7;
-  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
- }
- 
- .card-button:hover {
-  color: var(--btn-color);
-  background-color: var(--glow-color);
-  box-shadow: 0 0 1em .25em var(--glow-color),
-         0 0 4em 2em var(--glow-spread-color),
-         inset 0 0 .75em .25em var(--glow-color);
- }
- 
- .card-button:active {
-  box-shadow: 0 0 0.6em .25em var(--glow-color),
-         0 0 2.5em 2em var(--glow-spread-color),
-         inset 0 0 .5em .25em var(--glow-color);
- }
+.card-button:hover {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #0a3530, #090437, #0a3530);
+  border: 1px solid aliceblue;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+}
 
+.card-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #0a3530, #090437, #0a3530);
+  border: 2px solid rgb(200, 70, 14);
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+}
+
+.card-button svg {
+  margin-right: 3px;
+  transform: rotate(0deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.card-button span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.card-button:hover svg {
+  transform:  rotate(360deg);
+  color:orangered;
+}
+
+
+.card-button:hover span {
+  transform: translateX(7px);
+}
 .dept-bg{
   background-image: linear-gradient(to top right,#00d5ff, #fbfffe) !important;
 }
@@ -393,6 +419,46 @@
   }
 } 
 
+.card{
+  box-shadow: 0px 0px 10px rgba(114, 211, 238, 0.475);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 5px 20px rgba(120, 255, 248);
+}
+  
+
+.card::before {
+  content: '';
+  position: absolute;
+  
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  inset: 5px;
+  border-radius: 15px;
+}  
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+
+
+
+/* 
 .card {
   position: relative;
   width: 220px;
@@ -452,8 +518,8 @@
   font-weight: 100;
   padding:4%;
   /* background-image: url("./xplore logo_final3.png"); */
-}
-
+/* } */
+/* 
 .card1:hover:after {
   content: "Lorem  Repudiandae,esse distinctio saepe corporis velit accusantium, voluptatibus atqueexcepturi at reiciendis";
   color:aliceblue;
@@ -480,7 +546,7 @@
   color:aliceblue;
   font-weight: 100;
   padding:4%;
-}
+} */ */
 
 .header-gradient{
   
@@ -525,6 +591,7 @@
   background-color: transparent;
   color: #e8e8e8;
   font-size: 17px;
+  border: 2px solid white;
   font-weight: 600;
   border-radius: 10px;
   width: 150px;
@@ -535,6 +602,7 @@
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
   transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 999999;
 }
 
 .button::before {

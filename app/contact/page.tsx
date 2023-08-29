@@ -3,7 +3,7 @@ import { Github, Mail, Twitter, PhoneCallIcon } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
-import Particles from "../components/particles";
+import Particles from "../components/particles2";
 
 const socials = [
   {
@@ -34,20 +34,20 @@ const socials = [
 
 export default function Example() {
   return (
-    <div className=" bg-gradient-to-tl sm:pt-0 lg:pt-40 p-8 from-emerald-950 via-indigo-950 to-teal-900/0">
+    <div className=" bg-gradient-to-tl sm:pt-0 lg:pt-20  p-8 from-emerald-950 via-indigo-950 to-teal-900/0">
       <Navigation />
 	  <Particles
-          className="absolute inset-0 -z-10 animate-fade-in"
+          className="absolute inset-0 z-10 animate-fade-in"
           quantity={200}
         />
-      <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-        <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+      <div className="container flex items-center  justify-center min-h-screen px-4 mx-auto">
+        <div className="grid w-full grid-cols-1 gap-8 z-40 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-8">
           {socials.map((s) => (
             <Card>
               <Link
                 href={s.href}
                 target="_blank"
-                className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
+                className=" relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24 p-5 lg:pb-12 lg:pt-10  md:p-16"
               >
                 <span
                   className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"

@@ -8,8 +8,8 @@ import {
 import { MouseEventHandler, PropsWithChildren } from "react";
 
 export const Card: React.FC<PropsWithChildren> = ({ children }) => {
-	const mouseX = useSpring(0, { stiffness: 500, damping: 100 });
-	const mouseY = useSpring(0, { stiffness: 500, damping: 100 });
+	const mouseX = useSpring(0, { stiffness: 50000, damping: 100 });
+	const mouseY = useSpring(0, { stiffness: 50000, damping: 100 });
 
 	function onMouseMove({ currentTarget, clientX, clientY }: any) {
 		const { left, top } = currentTarget.getBoundingClientRect();
@@ -22,16 +22,16 @@ export const Card: React.FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<div
 			onMouseMove={onMouseMove}
-			className="overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-950/50 group md:gap-8 hover:border-emerald-200/50 border-orange-400 "
+			className="overflow-hidden card relative duration-700 border rounded-xl bg-gradient-to-tr from-zinc-900/50 via-indigo-800/50 to-zinc-900/80 hover:from-zinc-900/50 hover:via-indigo-800 hover:to-zinc-900  group md:gap-8 hover:border-emerald-200/50 border-orange-400 "
 		>
 			{/* <Particles
           className="absolute inset-0 -z-10 animate-fade-in"
           quantity={100}
         /> */}
-			<div className="pointer-events-none">
+			<div className="pointer-events-none ">
 				<div className="absolute inset-0 z-0  transition duration-1000 [mask-image:linear-gradient(,transparent)]" />
 				<motion.div
-					className="absolute inset-0 z-10  bg-gradient-to-br opacity-100  via-zinc-50/10  transition duration-1000 group-hover:opacity-50 "
+					className="absolute  inset-0 z-10  bg-gradient-to-br opacity-100  via-zinc-50/10  transition duration-1000 group-hover:opacity-50 "
 					style={style}
 				/>
 				<motion.div

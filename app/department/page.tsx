@@ -5,7 +5,7 @@ import Navbar from "./nav";
 import Image from "next/image";
 import IconsPage from "./deptsec1";
 import ece from "./assets/ece.png";
-import eee from "./assets/eeebg.png";
+import eee from "./assets/eee.png";
 import it from "./assets/it.png";
 import cse from "./assets/cse.png";
 import mech from "./assets/mechbg.png";
@@ -18,40 +18,40 @@ import { Card } from "./card";
 
 const socials = [
   {
-    href: "",
+    href: "https://www.licetslice.in/",
     label: "ECE",
-    desc: "licet",
+    desc: "ECE",
     image: ece,
   },
   {
     href: "https://flair2k23.vercel.app",
     label: "IT",
-    desc: "licet",
+    desc: "IT",
     image: it,
   },
   {
-    href: "mailto:.com",
+    href: "https://xplore2k23.netlify.app/",
     label: "CSE",
-    desc: "licet",
+    desc: "CSE",
     image: cse,
   },
   {
-    href: "mailto:.com",
+    href: "https://strom2023.github.io/home/",
     label: "EEE",
-    desc: "licet",
+    desc: "EEE",
     image: eee,
   },
   {
-    href: "mailto:.com",
+    href: "http://torq2k23.in/",
     label: "MECH",
-    desc: "licet",
+    desc: "MECH",
     image: mech,
   },
 ];
 
 export default function Example() {
   return (
-    <div className="bg-gradient-to-tl sm:pt-0 lg:pt-40 p-8 from-teal-950 via-teal-950 to-zinc-900/0">
+    <div className="bg-gradient-to-tl sm:pt-0 lg:pt-40 p-8 from-zinc-950 via-indigo-950 to-zinc-900/0">
       <Navigation />
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
@@ -60,7 +60,7 @@ export default function Example() {
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
         <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
           {socials.map((s) => (
-            <Card key={s.desc}>
+            <Card key={s.desc} >
               <div className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24 lg:pb-10 md:p-16">
                 <span
                   className="absolute w-px  bg-gradient-to-b from-zinc-900 via-zinc-500/50 to-transparent"
@@ -71,12 +71,12 @@ export default function Example() {
                   <span className="text-xl mt-6 text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
                     {s.label}
                   </span>
-                  <span className="text-xl mt-6 font-medium duration-150 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
+                  {/* <span className="text-xl mt-6 font-medium duration-150 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
                     {s.desc}
-                  </span>
+                  </span> */}
                   <div className="flex justify-center  pt-10">
                     <Link href={s.href} target="_blank" className="button-link">
-                    <button className="card-button inline-flex items-center group">
+                    <button className="card-button  inline-flex items-center group">
                         Details
                         <span className="ml-2 transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
                           <ArrowRight />
