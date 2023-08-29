@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Font1"; /* Replace with your desired font name */
+  font-family: "Font1"; 
   src: url("public/fonts/WestchesterV2-Regular.otf") format("opentype");
 }
 
@@ -424,101 +424,8 @@ svg:hover {
   inset: 5px;
   border-radius: 15px;
 }
-/* .card:hover:before {
-  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
-  animation: rotBGimg 3.5s linear infinite;
-} */
 
-/* 
-.card {
-  position: relative;
-  width: 220px;
-  height: 320px;
-  background: linear-gradient( #000000, #ffffff);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 15px;
-  cursor: pointer;
-  color:aliceblue;
-}
-
-.card::before,
-.card::after {
-  position: absolute;
-  content: "";
-  width: 20%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2vh;
-  font-weight: bold;
-  background: linear-gradient( #3b002d, #011e11);
-  transition: all 0.5s;
-  color:aliceblue;
-}
-
-.card::before {
-  top: 0;
-  right: 0;
-  border-radius: 0 15px 0 100%;
-}
-
-.card::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100%  0 15px;
-}
-
-.card:hover::before,
-.card:hover:after {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  transition: all 0.5s;
-  color:black;
-}
-
-
-.card0:hover:after {
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,esse distinctio saepe corporis velit accusantium, voluptatibus atqueexcepturi at reiciendis";
-  color:aliceblue;
-  font-weight: 100;
-  padding:4%;
-  /* background-image: url("./xplore logo_final3.png"); */
-/* } */
-/* 
-.card1:hover:after {
-  content: "Lorem  Repudiandae,esse distinctio saepe corporis velit accusantium, voluptatibus atqueexcepturi at reiciendis";
-  color:aliceblue;
-  font-weight: 100;
-  padding:4%;
-}
-
-.card2:hover:after {
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,esse distinctio saepe corporis velit accusantium, voluptatibus atqueexcepturi at reiciendis";
-  color:aliceblue;
-  font-weight: 100;
-  padding:4%;
-}
-
-.card3:hover:after {
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,esse distinctio saepe corporis velit accusantium, voluptatibus atqueexcepturi at reiciendis";
-  color:aliceblue;
-  font-weight: 100;
-  padding:4%;
-}
-
-.card4:hover:after {
-  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,esse distinctio saepe corporis velit accusantium, voluptatibus atqueexcepturi at reiciendis";
-  color:aliceblue;
-  font-weight: 100;
-  padding:4%;
-} */
-*/ .header-gradient {
+.header-gradient {
   color: rgb(98, 4, 98);
   background-clip: text;
   text-fill-color: transparent;
