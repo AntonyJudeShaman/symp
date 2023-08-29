@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Font1'; /* Replace with your desired font name */
-  src: url('public/fonts/WestchesterV2-Regular.otf') format('opentype');
+  font-family: "Font1"; /* Replace with your desired font name */
+  src: url("public/fonts/WestchesterV2-Regular.otf") format("opentype");
 }
 
-svg:hover{
-  color:#00d5ff;
+svg:hover {
+  color: #00d5ff;
 }
 
 .countdown {
@@ -21,9 +20,9 @@ svg:hover{
   align-items: center;
   gap: 10px;
   font-size: 24px;
-  background: -webkit-linear-gradient( #dfdcdc, #fa0b0b);
+  background: -webkit-linear-gradient(#dfdcdc, #fa0b0b);
   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .countdown-item {
@@ -38,8 +37,8 @@ svg:hover{
 }
 
 @font-face {
-  font-family: 'olive'; 
-  src: url('public/fonts/olivevillage-italic.ttf') format('truetype');
+  font-family: "olive";
+  src: url("public/fonts/olivevillage-italic.ttf") format("truetype");
 }
 
 .mont {
@@ -48,38 +47,36 @@ svg:hover{
 }
 
 .custom {
-  font-family: 'Font2'; 
+  font-family: "Font2";
 }
-
-
 
 @layer base {
   .text-edge-outline {
-    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   }
-} 
-
-.svg-icon{
-  color:white;
 }
 
-.svg-icon:hover{
-  color:rgb(0, 255, 247);
+.svg-icon {
+  color: white;
 }
 
-@media only screen and (max-width: 500px){
-.page-height{
-  min-height: 225vh;
-  padding-top: 50%;
+.svg-icon:hover {
+  color: rgb(0, 255, 247);
 }
 
-.mobile-para{
-  padding:4% !important;
-}
+@media only screen and (max-width: 500px) {
+  .page-height {
+    min-height: 225vh;
+    padding-top: 50%;
+  }
 
-.icon{
-  margin-left: 22%;
-}
+  .mobile-para {
+    padding: 4% !important;
+  }
+
+  .icon {
+    margin-left: 22%;
+  }
 }
 
 .tiltneon {
@@ -128,24 +125,21 @@ svg:hover{
 }
 
 .card-button:hover svg {
-  transform:  rotate(360deg);
-  color:orangered;
+  transform: rotate(360deg);
+  color: orangered;
 }
-
 
 .card-button:hover span {
   transform: translateX(7px);
 }
-.dept-bg{
-  background-image: linear-gradient(to top right,#00d5ff, #fbfffe) !important;
+.dept-bg {
+  background-image: linear-gradient(to top right, #00d5ff, #fbfffe) !important;
 }
 
-.hover\:animate-bounce:hover {
-  animation: bounce 0.5s infinite;
-}
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -153,22 +147,19 @@ svg:hover{
   }
 }
 
-@media only screen and (min-width: 501px){
-    /* .button-link{
+@media only screen and (min-width: 501px) {
+  /* .button-link{
       margin-bottom: -80%;
     } */
 }
 
-@media only screen and (max-width: 500px){
-  .button-link{
+@media only screen and (max-width: 500px) {
+  .button-link {
     margin-bottom: 15%;
   }
 }
 
-
-@media only screen and (min-width: 1200px){
-  
-
+@media only screen and (min-width: 1200px) {
   .logo-image {
     margin: 0 auto;
     max-width: 80%;
@@ -177,168 +168,152 @@ svg:hover{
 
   .hov {
     font-size: 150%;
-    background: -webkit-linear-gradient( #efeded, #65e0ff);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   font-weight: 600;
-   }
-   
- 
-   .hov:hover{
+    background: -webkit-linear-gradient(#efeded, #65e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+
+  .hov:hover {
     font-size: 150%;
-    background: -webkit-linear-gradient( #dfdcdc, #0bfa93);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   font-weight: 600;
- }
+    background: -webkit-linear-gradient(#dfdcdc, #0bfa93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  
   .logo-image {
     margin: 0 auto;
     max-width: 80%;
     max-height: 80%;
   }
 
-
   .hov {
-      font-size: 135%;
-      background: -webkit-linear-gradient( #efeded, #65e0ff);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     font-weight: 600;
-     }
+    font-size: 135%;
+    background: -webkit-linear-gradient(#efeded, #65e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
 
-     
-     
-   
-     .hov:hover{
-      font-size: 135%;
-      background: -webkit-linear-gradient( #dfdcdc, #0bfa93);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     font-weight: 600;
-   }
+  .hov:hover {
+    font-size: 135%;
+    background: -webkit-linear-gradient(#dfdcdc, #0bfa93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .navbar {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-   
-    
-    .logo-image {
-      margin: 0 auto;
-      max-width: 140%;
-      max-height: 140%;
-    }
-    
-    .size {
-      font-size: 1.4rem;
-    }
-
-    .hov {
-      font-size: 125%;
-      background: -webkit-linear-gradient( #efeded, #65e0ff);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     font-weight: 600;
-     }
-     
-   
-     .hov:hover{
-      font-size: 125%;
-      background: -webkit-linear-gradient( #dfdcdc, #0bfa93);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     font-weight: 600;
-   }
-  }
-  @media only screen and (min-width: 551px) and (max-width: 767px){
-    .navbar {
-      font-size: auto;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .logo-image {
-      margin: 0 auto;
-      max-width: 140%;
-      max-height: 140%;
-    }
-    
-
-    .size {
-      font-size: 1rem;
-    }
-
-    .hov {
-      font-size: 105%;
-      background: -webkit-linear-gradient( #efeded, #65e0ff);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     font-weight: 600;
-     }
-     
-   
-     .hov:hover{
-      font-size: 105%;
-      background: -webkit-linear-gradient( #dfdcdc, #0bfa93);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     font-weight: 600;
-   }
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  @media only screen and (max-width: 551px) {
-    .navbar {
-      font-size: 2.2vh;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    
-
-    .logo-image {
-      margin: 0 auto;
-      max-width: 140%;
-      max-height: 140%;
-    }
-    
-
-    
-
-    .hov {
-      font-size: 95%;
-      background: -webkit-linear-gradient( #efeded, #65e0ff);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     font-weight: 600;
-     }
-     
-   
-     .hov:hover{
-      font-size: 95%;
-      background: -webkit-linear-gradient( #dfdcdc, #0bfa93);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     font-weight: 600;
-   }
+  .logo-image {
+    margin: 0 auto;
+    max-width: 140%;
+    max-height: 140%;
   }
-  
+
+  .size {
+    font-size: 1.4rem;
+  }
+
+  .hov {
+    font-size: 125%;
+    background: -webkit-linear-gradient(#efeded, #65e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+
+  .hov:hover {
+    font-size: 125%;
+    background: -webkit-linear-gradient(#dfdcdc, #0bfa93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 767px) {
+  .navbar {
+    font-size: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-image {
+    margin: 0 auto;
+    max-width: 140%;
+    max-height: 140%;
+  }
+
+  .size {
+    font-size: 1rem;
+  }
+
+  .hov {
+    font-size: 105%;
+    background: -webkit-linear-gradient(#efeded, #65e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+
+  .hov:hover {
+    font-size: 105%;
+    background: -webkit-linear-gradient(#dfdcdc, #0bfa93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 551px) {
+  .navbar {
+    font-size: 2.2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-image {
+    margin: 0 auto;
+    max-width: 140%;
+    max-height: 140%;
+  }
+
+  .hov {
+    font-size: 95%;
+    background: -webkit-linear-gradient(#efeded, #65e0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+
+  .hov:hover {
+    font-size: 95%;
+    background: -webkit-linear-gradient(#dfdcdc, #0bfa93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+}
+
 .under:hover::after {
   content: "";
   display: block;
   height: 0.1vh;
   width: 80%;
-  margin: 0 auto; 
+  margin: 0 auto;
   background-color: #ffffff;
 }
-
 
 @media (min-width: 550px) {
   .profile-button {
@@ -386,7 +361,6 @@ svg:hover{
   margin-bottom: 10px;
 }
 
-
 @media (max-width: 767px) {
   .hamburger-icon {
     display: block;
@@ -402,24 +376,24 @@ svg:hover{
 }
 
 @media (min-width: 768px) {
-  .arrow-left{
+  .arrow-left {
     margin-left: 3%;
   }
 }
 
 @media (max-width: 768px) {
-  .arrow-left{
+  .arrow-left {
     margin-left: 10%;
   }
 }
 
 @layer base {
   .text-edge-outline {
-    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   }
-} 
+}
 
-.card{
+.card {
   box-shadow: 0px 0px 10px rgba(114, 211, 238, 0.475);
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -427,12 +401,11 @@ svg:hover{
 .card:hover {
   box-shadow: 0px 5px 20px rgba(120, 255, 248);
 }
-  
 
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
-  
+
   animation: rotBGimg 3s linear infinite;
   transition: all 0.2s linear;
 }
@@ -450,13 +423,11 @@ svg:hover{
 .card::after {
   inset: 5px;
   border-radius: 15px;
-}  
+}
 /* .card:hover:before {
   background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
   animation: rotBGimg 3.5s linear infinite;
 } */
-
-
 
 /* 
 .card {
@@ -546,27 +517,24 @@ svg:hover{
   color:aliceblue;
   font-weight: 100;
   padding:4%;
-} */ */
-
-.header-gradient{
-  
-    color: rgb(98, 4, 98);
-   background-clip: text;
-   text-fill-color: transparent;
-   font-weight: 600;
+} */
+*/ .header-gradient {
+  color: rgb(98, 4, 98);
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 600;
 }
 
-.p-margin{
+.p-margin {
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.text-gradient{
-  background: linear-gradient( #dfdcdc, #0bfa93);
-   background-clip: text;
-   text-fill-color: transparent;
+.text-gradient {
+  background: linear-gradient(#dfdcdc, #0bfa93);
+  background-clip: text;
+  text-fill-color: transparent;
 }
-
 
 ::-webkit-scrollbar {
   width: 1vh;
@@ -601,7 +569,7 @@ svg:hover{
   cursor: pointer;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   z-index: 999999;
 }
 
@@ -613,12 +581,12 @@ svg:hover{
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: linear-gradient(135deg,#7b4397,#dc2430 );
-  transform: translate(0%,90%);
+  background: linear-gradient(135deg, #7b4397, #dc2430);
+  transform: translate(0%, 90%);
   z-index: 99;
   position: relative;
   transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.23, 2, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 2, 0.32, 1);
 }
 
 .button::after {
@@ -626,23 +594,23 @@ svg:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg,#4eb3e6,#b70c84 );
+  background: linear-gradient(135deg, #4eb3e6, #b70c84);
   width: 100%;
   height: 100%;
   pointer-events: none;
   transform-origin: top;
-  transform: translate(0%,-100%);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transform: translate(0%, -100%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .button:hover::before {
-  transform: translate(0%,0%);
+  transform: translate(0%, 0%);
   border-color: aliceblue;
   border-radius: 5%;
 }
 
 .button:hover::after {
-  transform: translate(0%,-200%);
+  transform: translate(0%, -200%);
 }
 
 .button:focus {
@@ -652,7 +620,6 @@ svg:hover{
 .button:active {
   scale: 0.95;
 }
-
 
 .button1 {
   position: relative;
@@ -668,7 +635,7 @@ svg:hover{
   cursor: pointer;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(36, 0, 0, 0.2);
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .button1::before {
@@ -679,12 +646,12 @@ svg:hover{
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: linear-gradient(135deg,#c8051f,#24dcae );
-  transform: translate(0%,90%);
+  background: linear-gradient(135deg, #c8051f, #24dcae);
+  transform: translate(0%, 90%);
   z-index: 99;
   position: relative;
   transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.23, 2, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 2, 0.32, 1);
 }
 
 .button1::after {
@@ -692,23 +659,23 @@ svg:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg,#529cb7,#e74900 );
+  background: linear-gradient(135deg, #529cb7, #e74900);
   width: 100%;
   height: 100%;
   pointer-events: none;
   transform-origin: top;
-  transform: translate(0%,-100%);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transform: translate(0%, -100%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .button1:hover::before {
-  transform: translate(0%,0%);
+  transform: translate(0%, 0%);
   border-color: rgb(4, 36, 64);
   border-radius: 5%;
 }
 
 .button1:hover::after {
-  transform: translate(0%,-200%);
+  transform: translate(0%, -200%);
 }
 
 .button1:focus {
@@ -718,4 +685,3 @@ svg:hover{
 .button1:active {
   scale: 0.95;
 }
-

@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
       <div className="  w-full  mx-auto  d-block">
         <div className="flex items-center  mx-auto d-block">
           <div className="flex-shrink-0   mx-auto d-block">
-            <Link href="/">
+            <Link href="">
               <Image
                 src={logo}
                 alt="Logo"

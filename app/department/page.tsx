@@ -18,7 +18,7 @@ import { Card } from "./card";
 
 const socials = [
   {
-    href: "https://www.licetslice.in/",
+    href: "https://www.licetslice.in",
     label: "ECE",
     desc: "ECE",
     image: ece,
@@ -30,19 +30,19 @@ const socials = [
     image: it,
   },
   {
-    href: "https://xplore2k23.netlify.app/",
+    href: "https://xplore2k23.netlify.app",
     label: "CSE",
     desc: "CSE",
     image: cse,
   },
   {
-    href: "https://strom2023.github.io/home/",
+    href: "https://strom2023.github.io/home",
     label: "EEE",
     desc: "EEE",
     image: eee,
   },
   {
-    href: "http://torq2k23.in/",
+    href: "http://torq2k23.in",
     label: "MECH",
     desc: "MECH",
     image: mech,
