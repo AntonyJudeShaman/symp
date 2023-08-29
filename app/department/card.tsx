@@ -5,7 +5,6 @@ import {
 	useMotionValue,
 	useSpring,
 } from "framer-motion";
-
 import { MouseEventHandler, PropsWithChildren } from "react";
 
 export const Card: React.FC<PropsWithChildren> = ({ children }) => {
@@ -23,8 +22,12 @@ export const Card: React.FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<div
 			onMouseMove={onMouseMove}
-			className="overflow-hidden relative duration-700 border rounded-xl hover:bg-teal-950/50 group md:gap-8 hover:border-zinc-100/50 border-zinc-400 "
+			className="overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-950/50 group md:gap-8 hover:border-emerald-200/50 border-orange-400 "
 		>
+			{/* <Particles
+          className="absolute inset-0 -z-10 animate-fade-in"
+          quantity={100}
+        /> */}
 			<div className="pointer-events-none">
 				<div className="absolute inset-0 z-0  transition duration-1000 [mask-image:linear-gradient(,transparent)]" />
 				<motion.div
