@@ -42,7 +42,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [AntonyJudeShaman/symp](https://github.com/AntonyJudeShaman/symp)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|23<br/>Tools used|12/12/23 <br/>Report generated|
+|23<br/>Tools used|01/05/24 <br/>Report generated|
 |------|------|
 </div>
 
